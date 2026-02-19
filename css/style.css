@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
 }
 
 *::after, *::before {
@@ -70,10 +69,13 @@ button {
     background: #fff;
     border-radius: 0.5rem;
     transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
 }
 
 .card-img img {
     padding: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .card-img img:hover {
@@ -132,6 +134,14 @@ button {
     display: inline-block;
     text-align: center;
     padding: 10px 0;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.card-buttons a:hover {
+    background: #f2f2f2;
+    color: #262626;
+    border: 3px solid #262626;
 }
 
 .card-buttons .buy_now-button {
