@@ -55,14 +55,6 @@ This project is part of my frontend fundamentals practice while strengthening my
 
 ---
 
-## 📷 Preview
-
-![Desktop screen](image.png)
-![Mobile screen](image-1.png)
-
-
----
-
 ## 📂 Project structure
 
 ```
