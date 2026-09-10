@@ -14,33 +14,37 @@
 </head>
 
 <body>
-    <main class="product">
-        <section class="product-card">
-            <div class="card-img">
-                <img src="./public/img/article-img.png" alt="Product image" title="MacBook Air" id="image">
-            </div>
-        </section>
-        <section class="card-information">
-            <p class="card-title" id="title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas voluptate quod debitis enim
-                quasi.
-            </p>
-            <p class="card-description" id="description">Descricion del producto</p>
-            <p class="card-category" id="category">Categoria del producto</p>
-            <div class="card-rate">
-                <i class="fa-solid fa-star"></i>
-                <p id="rate">0.0</p>
-                <span id="count">(0000)</span>
-            </div>
-            <p class="card-price">$<span id="price">00,000.00</span></p>
-            <div class="card-buttons">
-                <a href="#" class="buy_now-button">Buy Now</a>
-                <a href="#" class="add_card-button">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </div>
-        </section>
-    </main>
+    <div class="container">
+        <main class="product">
+            <section class="product-card">
+                <div class="card-img">
+                    <img class="img" src="./public/img/article-img.png" alt="Product image" title="MacBook Air" id="image">
+                </div>
+            </section>
+            <section class="card-information">
+                <p class="card-title" id="title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas voluptate quod debitis enim
+                    quasi.
+                </p>
+                <div class="card-statistics">
+                    <p class="card-category" id="category">Categoria del producto</p>
+                    <div class="card-rate">
+                        <i class="fa-solid fa-star icon"></i>
+                        <p id="rate">0.0</p>
+                        <span class="count" id="count">(0000)</span>
+                    </div>
+                </div>
+                <p class="card-description" id="description">Descricion del producto</p>
+                <p class="card-price" id="price"></p>
+                <div class="card-buttons">
+                    <a href="#" class="btn btn--buy-now">Buy Now</a>
+                    <a href="#" class="btn btn--add-card">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
