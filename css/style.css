@@ -179,3 +179,59 @@ button {
 .btn--add-card {
     flex: 0.25;
 }
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        #e3e3e3 25%,
+        #f5f5f5 50%,
+        #e3e3e3 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 0.25rem;
+}
+
+.skeleton-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.skeleton-title,
+.skeleton-description {
+    width: 100%;
+    height: 1.5rem;
+}
+
+.skeleton-category {
+    width: 35%;
+    height: 1rem;
+}
+
+.skeleton-price {
+    width: 30%;
+    height: 2rem;
+}
+
+.skeleton-rate {
+    width: 80px;
+    height: 1rem;
+}
+
+.skeleton-count {
+    width: 50px;
+    height: 1rem;
+}
+
+.skeleton-btn {
+    width: 100%;
+    height: 3rem;
+}
+
+@keyframes skeleton-loading {
+    from {
+        background-position: 200% 0;
+    } to {
+        background-position: -200% 0;
+    }
+}
