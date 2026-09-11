@@ -41,7 +41,12 @@ const handleProduct = ({id, image, title, description, category, rating, price})
         rating,
         price
     };
-    renderProduct(product);
+
+    if (product) {
+        renderProduct(product);
+        cardContent.forEach(content => content.classList.remove('hidde'));
+        skeletonContainer.forEach(container => container.classList.add('hidde'));
+    }
 };
 
 const imageProduct = document.getElementById('image');
@@ -51,6 +56,8 @@ const categoryProduct = document.getElementById('category');
 const rateProduct = document.getElementById('rate');
 const countProduct = document.getElementById('count');
 const priceProduct = document.getElementById('price');
+const skeletonContainer = document.querySelectorAll('.skeleton');
+const cardContent = document.querySelectorAll('.card-content');
 
 const renderProduct = ({image, title, description, category, rating, price}) => {
     imageProduct.src = image;
